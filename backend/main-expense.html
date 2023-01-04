@@ -483,7 +483,7 @@
                                             </div>
                                         </div>  
                                         <div class="create-workform">
-                                            <a href="#create-event" data-toggle="modal" data-target="#create-event" class="btn btn-primary pr-5 position-relative">Generate Report<span class="event-add-btn"><i class="ri-add-line"></i></span></a>
+                                            <a href="#gen-expense" data-toggle="modal" data-target="#gen-expense" class="btn btn-primary pr-5 position-relative">Generate Report<span class="event-add-btn"><i class="ri-add-line"></i></span></a>
                                         </div>                  
                                     </div>
                                 </div>
@@ -722,7 +722,7 @@
                           <div class="form-group">
                             <h6 class="form-label mb-3">Merchant name</h6>
                             <div class="input-group">
-                              <input type="text" class="form-control" readonly value="biztrava.com/hangha1234">
+                              <input type="text" class="form-control" readonly value="Acme Inc">
                               <div class="input-group-append">
                                 <span class="input-group-text" id="basic-addon3"></span>
                               </div>
@@ -731,7 +731,7 @@
                           <div class="form-group">
                             <h6 class="form-label mb-3">Amount (VND)</h6>
                             <div class="input-group">
-                              <input type="text" class="form-control" readonly value="biztrava.com/hangha1234">
+                              <input type="text" class="form-control" readonly value="Amount VND">
                               <div class="input-group-append">
                                 <span class="input-group-text" id="basic-addon4"></span>
                               </div>
@@ -740,7 +740,7 @@
                           <div class="form-group">
                             <h6 class="form-label mb-3">Purpose</h6>
                             <div class="input-group">
-                              <input type="text" class="form-control" readonly value="biztrava.com/hangha1234">
+                              <input type="text" class="form-control" readonly value="e.g.Taxi to the airport">
                               <div class="input-group-append">
                                 <span class="input-group-text" id="basic-addon4"></span>
                               </div>
@@ -806,7 +806,45 @@
         </div>
       </div>
     </div>
-
+    <!-- Modal -->
+    <div class="modal fade gen-expense" id="gen-expense" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="popup text-left" id="popup">
+                  <h4 class="mb-3">Export an invoice report</h4>
+                  <div class="content create-workform">
+                      <div class="form-group">
+                        <h6 class="form-label mb-3">Time duration</h6>
+                        <div class="input-group">
+                          <input type="text" class="form-control" readonly value="">
+                          <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <h6 class="form-label mb-3">Details to be included in the report</h6>
+                        <div class="input-group">
+                          <input type="text" class="form-control" readonly value="">
+                          <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon3"></span>
+                          </div>
+                        </div>
+                      </div>
+                     
+                      <div class="col-lg-12 mt-3">
+                          <div class="d-flex flex-wrap align-items-ceter justify-content-center">
+                              <button type="submit" data-dismiss="modal" class="btn btn-primary mr-4">Cancel</button>
+                              <button type="submit" data-dismiss="modal" class="btn btn-outline-primary">Save</button>
+                          </div>
+                      </div>  
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     <!-- Wrapper End-->
     <footer class="iq-footer">
         <div class="container-fluid container">
